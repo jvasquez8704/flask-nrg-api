@@ -30,6 +30,11 @@ def get_movie_map(n: int = None):
     #     return movie_id_map_ref.limit_to_first(n).get(etag=True)
     return movie_id_map_ref.get(etag=True)
 
+def _get_movie_map():
+    #mapping with imdb 
+    # if n:
+    #     return movie_id_map_ref.limit_to_first(n).get(etag=True)
+    return movie_id_map_ref.get()
 
 
 
